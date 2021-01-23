@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <title>CSS - Formulario de Contacto No.2</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="main-container__title">Contact <span>Us</span></h1>
+      <div class="wrapper-container">
+        <div class="form-container">
+          <form class="formulario" id="formulario">
+            <h2 class="formulario__title">Contact us</h2>
+            <div class="formulario__datos">
+              <div class="formulario__nombre">
+                <label class="label" for="input-nombre">Full Name</label>
+                <input class="input" id="input-nombre" type="text" name="name" minlength="1" maxlength="30" required autocomplete="off" autofocus>
+              </div>
+              <div class="formulario__telefono">
+                <label class="label" for="input-telefono">Phone</label>
+                <input class="input" id="input-telefono" type="tel" name="phone" minlength="7" maxlength="20" required autocomplete="off">
+              </div>
+              <div class="formulario__email">
+                <label class="label" for="input-email">Email</label>
+                <input class="input" id="input-email" type="email" name="email" required autocomplete="off">
+              </div>
+              <div class="formulario__asunto">
+                <label class="label" for="input-asunto">Subjet</label>
+                <input class="input" id="input-asunto" type="text" name="subjet" minlength="1" maxlength="40" required autocomplete="off">
+              </div>
+              <div class="formulario__mensaje">
+                <label class="label" for="textarea">Message</label>
+                <textarea class="textarea" id="textarea" rows="5" name="message" minlength="1" maxlength="250" required autocomplete="off"></textarea>
+              </div>
+              <div class="formulario__button">
+                <input class="button" id="button" type="submit">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="info-container">
+          <h2 class="info-container__title">More info</h2>
+          <ul class="info-container__ul">
+            <li>Las Lomas</li>
+            <li>(+58) 261 3587596</li>
+            <li>contact@website.com</li>
+          </ul>
+            <p class="info-container__parrafo-uno">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ea adipisci molestiae vitae harum.
+            </p>
+            <p class="info-container__parrafo-dos">
+              Company.com 2020
+            </p>
+        </div>
+      </div>
+      <div class="message-container none" id="message-container"></div>
+    </div>
+    <script src="js/scripts.js" type="module"></script>
+  </body>
+</html>
